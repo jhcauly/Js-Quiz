@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jh Quiz</title>
+    <link rel="stylesheet" href="assent/css/style.css" />
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <a onclick="renderTodos()" style="float:left;">View hight scores</a>
+                <a style="float:right;" id="time">Time: 0</a>
+            </div>
+
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2 id="question">Coding Quiz Challenge</h2>
+                <div id="myP" style="list-style-type: visible;">
+                    <p>Try to answer the following code-related questions within the time limit.</p>
+                    <p>Keep in mind that incorrect answers will penalize your score/time</p>
+                    <p>By ten seconds!</p>
+                </div>
+                <div class="answer">
+                    <ul id="myUl" style="list-style-type: none;">
+                        <li onclick="selectAnswerCorrect('0')" value='' style="list-style-type: none;" id="li0"></li>
+                        <li onclick="selectAnswerCorrect('1')" value='' style="list-style-type: none;" id="li1"></li>
+                        <li onclick="selectAnswerCorrect('2')" value='' style="list-style-type: none;" id="li2"></li>
+                        <li onclick="selectAnswerCorrect('3')" value='' style="list-style-type: none;" id="li3"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="answer" id="showList1" style="list-style-type: none;">
+            </div>
+            <form class="form-inline" id="showList">
+                <!--   <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" name="email">
+                <button type="submit">Submit</button> -->
+            </form>
+
+            <div class="card-body" id="bottom" style="list-style-type: visible;">
+                <button onclick="startQuestion()" id="startQuestion" class="btn">Star Quiz</button>
+            </div>
+            <div class="card-body" id="bottomAnswer" style="list-style-type: none;">
+                <h2></h2>
+            </div>
+            <div class="card-body" style="list-style-type: none;">
+                <h2 id="h2Answer"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="assent/js/script.js">
+    </script>
+</body>
+
+</html>
