@@ -213,6 +213,7 @@ function createButtonElement(valor) {
     if (valor === "Submit") {
 
         newButton.type = 'submit';
+        newButton.className = 'btn';
         newButton.textContent = 'Submit';
         showList.appendChild(newButton)
         newButton.onclick = function() {
@@ -230,8 +231,10 @@ function createButtonElement(valor) {
     if (valor === "Elemment") {
         var newP = document.createElement('p')
         var newPinput = document.createElement('label')
+        newPinput.className = 'hour';
         var newInput = document.createElement('input')
-        newInput.id = 'inputScore';
+        newInput.id = 'btn';
+        newPinput.className = 'textarea';
         newP.id = 'newP';
         var textP = document.createTextNode("Your final score is " + timerCount)
         var textPinput = document.createTextNode("Enter initials: ")
